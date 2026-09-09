@@ -1,0 +1,43 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "flutter"
+}
+
+android {
+    namespace 'com.example.jishuqi'命名空间 'com.example.jishuqi'
+    compileSdkVersion 33
+    ndkVersion "25.1.8937393"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "com.example.jishuqi"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            // 简化签名，直接打 release 包
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'源文件 '../..'源文件 '../..' 源文件 '../..'源文件 '../..' 源文件 '../..' 源文件 '../..'源文件 '../..' 源文件 '../..' 源文件 '../..' 源文件 '../..' 源文件 '../..' 源文件 '../..'
+}
