@@ -1,0 +1,14 @@
+name: jishuqi名称：jishuqiname：jishuqi名称：jishuqi
+description: 基数+n 计算器描述：基数+n 计算器
+publish_to: 'none'发布目标：'none'
+version: 1.0.0+1版本：1.0.0+1
+
+environment:环境：
+  sdk: ^3.0.0SDK：^3.0.0sdk：^3.0.0SDK：^3.0.0
+
+dependencies:依赖项：
+  flutter:flutter：
+    sdk: fluttersdk：flutter
+
+flutter:flutter：
+  uses-material-design: trueuses-material-design：true
